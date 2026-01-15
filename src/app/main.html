@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sakura Nihon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #fff5f7;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff5a7a;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+
+        button {
+            background-color: #ff5a7a;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #ff9a9e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body onload="showGreeting()">
+
+<header>
+    <h1>🌸 Sakura Nihon</h1>
+    <p id="greeting"></p>
+    <p>CI/CD webhook test successful 🌸</p>
+
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#culture">Culture</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Sakura Nihon</h2>
+        <p>
+            A platform celebrating Japanese culture, language, and innovation.
+        </p>
+        <button onclick="showMessage()">Learn More</button>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact Us</h2>
+        <input type="email" id="email" placeholder="Enter your email">
+        <br><br>
+        <button onclick="validateEmail()">Submit</button>
+        <p id="result"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Sakura Nihon | Crafted with 🌸</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

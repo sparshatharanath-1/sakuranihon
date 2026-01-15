@@ -1,0 +1,3 @@
+@echo off
+echo Building application...
+echo Build successful
